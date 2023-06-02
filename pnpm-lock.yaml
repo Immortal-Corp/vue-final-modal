@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 importers:
 
@@ -27,8 +31,8 @@ importers:
         specifier: ^8.36.0
         version: 8.36.0
       pnpm:
-        specifier: ^8.0.0
-        version: 8.0.0
+        specifier: ^8.6.0
+        version: 8.6.0
       sass:
         specifier: ^1.60.0
         version: 1.60.0
@@ -10856,8 +10860,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@8.0.0:
-    resolution: {integrity: sha512-Crsvd8LKb+SoEB/bQxRZrtSt5Ri8g9jmPg6MKyexMTI1pdLd44gPwVV6cZLq2jYYPv5q+gADPkYTbYr8SeFCeA==}
+  /pnpm@8.6.0:
+    resolution: {integrity: sha512-uMaWGXlvG+m5NIJaR4JEEenChbg+1AP4zVpqs4PEcZg4uH+lXMTd/X/lirKZA+TC0w0d+++y3btINcwyKsuwAA==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true

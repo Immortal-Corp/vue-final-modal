@@ -1,8 +1,8 @@
-import type { PropType, RendererElement } from 'vue'
-import { coreModalProps } from '../CoreModal/CoreModalProps'
+import type { PropType, RendererElement } from "vue";
+import { coreModalProps } from "../CoreModal/CoreModalProps";
 
-export const vueFinalModalProps = {
-  ...coreModalProps,
+export const vueFinalModalProps = Object.assign(
+  coreModalProps,
   /**
    * @description Set `null | false` to disable teleport.
    * @default `'body'`
@@ -11,8 +11,12 @@ export const vueFinalModalProps = {
    * teleportTo: '#modals'
    * ```
    */
-  teleportTo: {
-    type: [String, null, Boolean, Object] as PropType<string | RendererElement | null | false>,
-    default: 'body',
-  },
-} as const
+  {
+    teleportTo: {
+      type: [String, null, Boolean, Object] as PropType<
+        string | RendererElement | null | false
+      >,
+      default: "body",
+    },
+  } as const
+);
